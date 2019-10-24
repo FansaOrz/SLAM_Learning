@@ -171,6 +171,12 @@ Test_Code_BINARY_DIR:STATIC=/home/fansa/Src/SLAM_Learning/ch2/build
 //Value Computed by CMake
 Test_Code_SOURCE_DIR:STATIC=/home/fansa/Src/SLAM_Learning/ch2
 
+//Dependencies for target
+hello_LIB_DEPENDS:STATIC=
+
+//Dependencies for target
+hello_shared_LIB_DEPENDS:STATIC=
+
 
 ########################
 # INTERNAL cache entries

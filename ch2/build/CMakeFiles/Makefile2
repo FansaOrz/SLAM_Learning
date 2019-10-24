@@ -60,13 +60,50 @@ CMAKE_SOURCE_DIR = /home/fansa/Src/SLAM_Learning/ch2
 CMAKE_BINARY_DIR = /home/fansa/Src/SLAM_Learning/ch2/build
 
 #=============================================================================
+# Target rules for target CMakeFiles/hello_shared.dir
+
+# All Build rule for target.
+CMakeFiles/hello_shared.dir/all:
+	$(MAKE) -f CMakeFiles/hello_shared.dir/build.make CMakeFiles/hello_shared.dir/depend
+	$(MAKE) -f CMakeFiles/hello_shared.dir/build.make CMakeFiles/hello_shared.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fansa/Src/SLAM_Learning/ch2/build/CMakeFiles --progress-num=1,2 "Built target hello_shared"
+.PHONY : CMakeFiles/hello_shared.dir/all
+
+# Include target in all.
+all: CMakeFiles/hello_shared.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/hello_shared.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fansa/Src/SLAM_Learning/ch2/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/hello_shared.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fansa/Src/SLAM_Learning/ch2/build/CMakeFiles 0
+.PHONY : CMakeFiles/hello_shared.dir/rule
+
+# Convenience name for target.
+hello_shared: CMakeFiles/hello_shared.dir/rule
+
+.PHONY : hello_shared
+
+# clean rule for target.
+CMakeFiles/hello_shared.dir/clean:
+	$(MAKE) -f CMakeFiles/hello_shared.dir/build.make CMakeFiles/hello_shared.dir/clean
+.PHONY : CMakeFiles/hello_shared.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/hello_shared.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/test_code.dir
 
 # All Build rule for target.
 CMakeFiles/test_code.dir/all:
 	$(MAKE) -f CMakeFiles/test_code.dir/build.make CMakeFiles/test_code.dir/depend
 	$(MAKE) -f CMakeFiles/test_code.dir/build.make CMakeFiles/test_code.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fansa/Src/SLAM_Learning/ch2/build/CMakeFiles --progress-num=1,2 "Built target test_code"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fansa/Src/SLAM_Learning/ch2/build/CMakeFiles --progress-num=3,4 "Built target test_code"
 .PHONY : CMakeFiles/test_code.dir/all
 
 # Include target in all.
@@ -93,6 +130,43 @@ CMakeFiles/test_code.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/test_code.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/use_libHelloSLAM.dir
+
+# All Build rule for target.
+CMakeFiles/use_libHelloSLAM.dir/all: CMakeFiles/hello_shared.dir/all
+	$(MAKE) -f CMakeFiles/use_libHelloSLAM.dir/build.make CMakeFiles/use_libHelloSLAM.dir/depend
+	$(MAKE) -f CMakeFiles/use_libHelloSLAM.dir/build.make CMakeFiles/use_libHelloSLAM.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fansa/Src/SLAM_Learning/ch2/build/CMakeFiles --progress-num=5,6 "Built target use_libHelloSLAM"
+.PHONY : CMakeFiles/use_libHelloSLAM.dir/all
+
+# Include target in all.
+all: CMakeFiles/use_libHelloSLAM.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/use_libHelloSLAM.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fansa/Src/SLAM_Learning/ch2/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/use_libHelloSLAM.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fansa/Src/SLAM_Learning/ch2/build/CMakeFiles 0
+.PHONY : CMakeFiles/use_libHelloSLAM.dir/rule
+
+# Convenience name for target.
+use_libHelloSLAM: CMakeFiles/use_libHelloSLAM.dir/rule
+
+.PHONY : use_libHelloSLAM
+
+# clean rule for target.
+CMakeFiles/use_libHelloSLAM.dir/clean:
+	$(MAKE) -f CMakeFiles/use_libHelloSLAM.dir/build.make CMakeFiles/use_libHelloSLAM.dir/clean
+.PHONY : CMakeFiles/use_libHelloSLAM.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/use_libHelloSLAM.dir/clean
 
 .PHONY : clean
 
