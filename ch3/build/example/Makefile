@@ -80,14 +80,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fansa/Src/SLAM_Learning/ch3/build/CMakeFiles /home/fansa/Src/SLAM_Learning/ch3/build/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/fansa/Src/SLAM_Learning/ch3/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/fansa/Src/SLAM_Learning/ch3/build/CMakeFiles /home/fansa/Src/SLAM_Learning/ch3/build/example/CMakeFiles/progress.marks
+	cd /home/fansa/Src/SLAM_Learning/ch3/build && $(MAKE) -f CMakeFiles/Makefile2 example/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fansa/Src/SLAM_Learning/ch3/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/fansa/Src/SLAM_Learning/ch3/build && $(MAKE) -f CMakeFiles/Makefile2 example/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,70 +97,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/fansa/Src/SLAM_Learning/ch3/build && $(MAKE) -f CMakeFiles/Makefile2 example/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/fansa/Src/SLAM_Learning/ch3/build && $(MAKE) -f CMakeFiles/Makefile2 example/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/fansa/Src/SLAM_Learning/ch3/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named eigenMatrix
+# Convenience name for target.
+example/CMakeFiles/coordinateTransform.dir/rule:
+	cd /home/fansa/Src/SLAM_Learning/ch3/build && $(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/coordinateTransform.dir/rule
+.PHONY : example/CMakeFiles/coordinateTransform.dir/rule
 
-# Build rule for target.
-eigenMatrix: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 eigenMatrix
-.PHONY : eigenMatrix
+# Convenience name for target.
+coordinateTransform: example/CMakeFiles/coordinateTransform.dir/rule
 
-# fast build rule for target.
-eigenMatrix/fast:
-	$(MAKE) -f useEigen/CMakeFiles/eigenMatrix.dir/build.make useEigen/CMakeFiles/eigenMatrix.dir/build
-.PHONY : eigenMatrix/fast
-
-#=============================================================================
-# Target rules for targets named useGeometry
-
-# Build rule for target.
-useGeometry: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 useGeometry
-.PHONY : useGeometry
-
-# fast build rule for target.
-useGeometry/fast:
-	$(MAKE) -f useGeometry/CMakeFiles/useGeometry.dir/build.make useGeometry/CMakeFiles/useGeometry.dir/build
-.PHONY : useGeometry/fast
-
-#=============================================================================
-# Target rules for targets named plotTrajectory
-
-# Build rule for target.
-plotTrajectory: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 plotTrajectory
-.PHONY : plotTrajectory
-
-# fast build rule for target.
-plotTrajectory/fast:
-	$(MAKE) -f visualizeGeometry/CMakeFiles/plotTrajectory.dir/build.make visualizeGeometry/CMakeFiles/plotTrajectory.dir/build
-.PHONY : plotTrajectory/fast
-
-#=============================================================================
-# Target rules for targets named coordinateTransform
-
-# Build rule for target.
-coordinateTransform: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 coordinateTransform
 .PHONY : coordinateTransform
 
 # fast build rule for target.
 coordinateTransform/fast:
-	$(MAKE) -f example/CMakeFiles/coordinateTransform.dir/build.make example/CMakeFiles/coordinateTransform.dir/build
+	cd /home/fansa/Src/SLAM_Learning/ch3/build && $(MAKE) -f example/CMakeFiles/coordinateTransform.dir/build.make example/CMakeFiles/coordinateTransform.dir/build
 .PHONY : coordinateTransform/fast
+
+coordinateTransform.o: coordinateTransform.cpp.o
+
+.PHONY : coordinateTransform.o
+
+# target to build an object file
+coordinateTransform.cpp.o:
+	cd /home/fansa/Src/SLAM_Learning/ch3/build && $(MAKE) -f example/CMakeFiles/coordinateTransform.dir/build.make example/CMakeFiles/coordinateTransform.dir/coordinateTransform.cpp.o
+.PHONY : coordinateTransform.cpp.o
+
+coordinateTransform.i: coordinateTransform.cpp.i
+
+.PHONY : coordinateTransform.i
+
+# target to preprocess a source file
+coordinateTransform.cpp.i:
+	cd /home/fansa/Src/SLAM_Learning/ch3/build && $(MAKE) -f example/CMakeFiles/coordinateTransform.dir/build.make example/CMakeFiles/coordinateTransform.dir/coordinateTransform.cpp.i
+.PHONY : coordinateTransform.cpp.i
+
+coordinateTransform.s: coordinateTransform.cpp.s
+
+.PHONY : coordinateTransform.s
+
+# target to generate assembly for a file
+coordinateTransform.cpp.s:
+	cd /home/fansa/Src/SLAM_Learning/ch3/build && $(MAKE) -f example/CMakeFiles/coordinateTransform.dir/build.make example/CMakeFiles/coordinateTransform.dir/coordinateTransform.cpp.s
+.PHONY : coordinateTransform.cpp.s
 
 # Help Target
 help:
@@ -170,10 +160,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... eigenMatrix"
-	@echo "... useGeometry"
-	@echo "... plotTrajectory"
 	@echo "... coordinateTransform"
+	@echo "... coordinateTransform.o"
+	@echo "... coordinateTransform.i"
+	@echo "... coordinateTransform.s"
 .PHONY : help
 
 
@@ -185,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/fansa/Src/SLAM_Learning/ch3/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

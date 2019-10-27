@@ -80,14 +80,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fansa/Src/SLAM_Learning/ch3/build/CMakeFiles /home/fansa/Src/SLAM_Learning/ch3/build/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/fansa/Src/SLAM_Learning/ch3/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/fansa/Src/SLAM_Learning/ch3/build/CMakeFiles /home/fansa/Src/SLAM_Learning/ch3/build/useEigen/CMakeFiles/progress.marks
+	cd /home/fansa/Src/SLAM_Learning/ch3/build && $(MAKE) -f CMakeFiles/Makefile2 useEigen/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fansa/Src/SLAM_Learning/ch3/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/fansa/Src/SLAM_Learning/ch3/build && $(MAKE) -f CMakeFiles/Makefile2 useEigen/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,70 +97,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/fansa/Src/SLAM_Learning/ch3/build && $(MAKE) -f CMakeFiles/Makefile2 useEigen/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/fansa/Src/SLAM_Learning/ch3/build && $(MAKE) -f CMakeFiles/Makefile2 useEigen/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/fansa/Src/SLAM_Learning/ch3/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named eigenMatrix
+# Convenience name for target.
+useEigen/CMakeFiles/eigenMatrix.dir/rule:
+	cd /home/fansa/Src/SLAM_Learning/ch3/build && $(MAKE) -f CMakeFiles/Makefile2 useEigen/CMakeFiles/eigenMatrix.dir/rule
+.PHONY : useEigen/CMakeFiles/eigenMatrix.dir/rule
 
-# Build rule for target.
-eigenMatrix: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 eigenMatrix
+# Convenience name for target.
+eigenMatrix: useEigen/CMakeFiles/eigenMatrix.dir/rule
+
 .PHONY : eigenMatrix
 
 # fast build rule for target.
 eigenMatrix/fast:
-	$(MAKE) -f useEigen/CMakeFiles/eigenMatrix.dir/build.make useEigen/CMakeFiles/eigenMatrix.dir/build
+	cd /home/fansa/Src/SLAM_Learning/ch3/build && $(MAKE) -f useEigen/CMakeFiles/eigenMatrix.dir/build.make useEigen/CMakeFiles/eigenMatrix.dir/build
 .PHONY : eigenMatrix/fast
 
-#=============================================================================
-# Target rules for targets named useGeometry
+eigenMatrix.o: eigenMatrix.cpp.o
 
-# Build rule for target.
-useGeometry: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 useGeometry
-.PHONY : useGeometry
+.PHONY : eigenMatrix.o
 
-# fast build rule for target.
-useGeometry/fast:
-	$(MAKE) -f useGeometry/CMakeFiles/useGeometry.dir/build.make useGeometry/CMakeFiles/useGeometry.dir/build
-.PHONY : useGeometry/fast
+# target to build an object file
+eigenMatrix.cpp.o:
+	cd /home/fansa/Src/SLAM_Learning/ch3/build && $(MAKE) -f useEigen/CMakeFiles/eigenMatrix.dir/build.make useEigen/CMakeFiles/eigenMatrix.dir/eigenMatrix.cpp.o
+.PHONY : eigenMatrix.cpp.o
 
-#=============================================================================
-# Target rules for targets named plotTrajectory
+eigenMatrix.i: eigenMatrix.cpp.i
 
-# Build rule for target.
-plotTrajectory: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 plotTrajectory
-.PHONY : plotTrajectory
+.PHONY : eigenMatrix.i
 
-# fast build rule for target.
-plotTrajectory/fast:
-	$(MAKE) -f visualizeGeometry/CMakeFiles/plotTrajectory.dir/build.make visualizeGeometry/CMakeFiles/plotTrajectory.dir/build
-.PHONY : plotTrajectory/fast
+# target to preprocess a source file
+eigenMatrix.cpp.i:
+	cd /home/fansa/Src/SLAM_Learning/ch3/build && $(MAKE) -f useEigen/CMakeFiles/eigenMatrix.dir/build.make useEigen/CMakeFiles/eigenMatrix.dir/eigenMatrix.cpp.i
+.PHONY : eigenMatrix.cpp.i
 
-#=============================================================================
-# Target rules for targets named coordinateTransform
+eigenMatrix.s: eigenMatrix.cpp.s
 
-# Build rule for target.
-coordinateTransform: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 coordinateTransform
-.PHONY : coordinateTransform
+.PHONY : eigenMatrix.s
 
-# fast build rule for target.
-coordinateTransform/fast:
-	$(MAKE) -f example/CMakeFiles/coordinateTransform.dir/build.make example/CMakeFiles/coordinateTransform.dir/build
-.PHONY : coordinateTransform/fast
+# target to generate assembly for a file
+eigenMatrix.cpp.s:
+	cd /home/fansa/Src/SLAM_Learning/ch3/build && $(MAKE) -f useEigen/CMakeFiles/eigenMatrix.dir/build.make useEigen/CMakeFiles/eigenMatrix.dir/eigenMatrix.cpp.s
+.PHONY : eigenMatrix.cpp.s
 
 # Help Target
 help:
@@ -171,9 +161,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... eigenMatrix"
-	@echo "... useGeometry"
-	@echo "... plotTrajectory"
-	@echo "... coordinateTransform"
+	@echo "... eigenMatrix.o"
+	@echo "... eigenMatrix.i"
+	@echo "... eigenMatrix.s"
 .PHONY : help
 
 
@@ -185,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/fansa/Src/SLAM_Learning/ch3/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

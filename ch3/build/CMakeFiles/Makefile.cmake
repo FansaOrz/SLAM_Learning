@@ -11,6 +11,14 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.5.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.5.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.5.1/CMakeSystem.cmake"
+  "../example/CMakeLists.txt"
+  "../useEigen/CMakeLists.txt"
+  "../useGeometry/CMakeLists.txt"
+  "../visualizeGeometry/CMakeLists.txt"
+  "/usr/local/lib/cmake/Pangolin/PangolinConfig.cmake"
+  "/usr/local/lib/cmake/Pangolin/PangolinConfigVersion.cmake"
+  "/usr/local/lib/cmake/Pangolin/PangolinTargets-release.cmake"
+  "/usr/local/lib/cmake/Pangolin/PangolinTargets.cmake"
   "/usr/share/cmake-3.5/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.5/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.5/Modules/CMakeCommonLanguageInclude.cmake"
@@ -37,9 +45,16 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "useEigen/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "useGeometry/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "visualizeGeometry/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "example/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/eigenMatrix.dir/DependInfo.cmake"
+  "useEigen/CMakeFiles/eigenMatrix.dir/DependInfo.cmake"
+  "useGeometry/CMakeFiles/useGeometry.dir/DependInfo.cmake"
+  "visualizeGeometry/CMakeFiles/plotTrajectory.dir/DependInfo.cmake"
+  "example/CMakeFiles/coordinateTransform.dir/DependInfo.cmake"
   )

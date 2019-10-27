@@ -171,6 +171,33 @@ Learning_SLAM_ch3_BINARY_DIR:STATIC=/home/fansa/Src/SLAM_Learning/ch3/build
 //Value Computed by CMake
 Learning_SLAM_ch3_SOURCE_DIR:STATIC=/home/fansa/Src/SLAM_Learning/ch3
 
+//The directory containing a CMake configuration file for Pangolin.
+Pangolin_DIR:PATH=/usr/local/lib/cmake/Pangolin
+
+//Value Computed by CMake
+example_BINARY_DIR:STATIC=/home/fansa/Src/SLAM_Learning/ch3/build/example
+
+//Value Computed by CMake
+example_SOURCE_DIR:STATIC=/home/fansa/Src/SLAM_Learning/ch3/example
+
+//Value Computed by CMake
+useEigen_BINARY_DIR:STATIC=/home/fansa/Src/SLAM_Learning/ch3/build/useEigen
+
+//Value Computed by CMake
+useEigen_SOURCE_DIR:STATIC=/home/fansa/Src/SLAM_Learning/ch3/useEigen
+
+//Value Computed by CMake
+useGeometry_BINARY_DIR:STATIC=/home/fansa/Src/SLAM_Learning/ch3/build/useGeometry
+
+//Value Computed by CMake
+useGeometry_SOURCE_DIR:STATIC=/home/fansa/Src/SLAM_Learning/ch3/useGeometry
+
+//Value Computed by CMake
+visualizeGeometry_BINARY_DIR:STATIC=/home/fansa/Src/SLAM_Learning/ch3/build/visualizeGeometry
+
+//Value Computed by CMake
+visualizeGeometry_SOURCE_DIR:STATIC=/home/fansa/Src/SLAM_Learning/ch3/visualizeGeometry
+
 
 ########################
 # INTERNAL cache entries
@@ -262,7 +289,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

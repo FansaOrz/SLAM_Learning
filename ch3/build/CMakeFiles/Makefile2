@@ -60,39 +60,222 @@ CMAKE_SOURCE_DIR = /home/fansa/Src/SLAM_Learning/ch3
 CMAKE_BINARY_DIR = /home/fansa/Src/SLAM_Learning/ch3/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/eigenMatrix.dir
+# Directory level rules for directory useEigen
+
+# Convenience name for "all" pass in the directory.
+useEigen/all: useEigen/CMakeFiles/eigenMatrix.dir/all
+
+.PHONY : useEigen/all
+
+# Convenience name for "clean" pass in the directory.
+useEigen/clean: useEigen/CMakeFiles/eigenMatrix.dir/clean
+
+.PHONY : useEigen/clean
+
+# Convenience name for "preinstall" pass in the directory.
+useEigen/preinstall:
+
+.PHONY : useEigen/preinstall
+
+#=============================================================================
+# Target rules for target useEigen/CMakeFiles/eigenMatrix.dir
 
 # All Build rule for target.
-CMakeFiles/eigenMatrix.dir/all:
-	$(MAKE) -f CMakeFiles/eigenMatrix.dir/build.make CMakeFiles/eigenMatrix.dir/depend
-	$(MAKE) -f CMakeFiles/eigenMatrix.dir/build.make CMakeFiles/eigenMatrix.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fansa/Src/SLAM_Learning/ch3/build/CMakeFiles --progress-num=1,2 "Built target eigenMatrix"
-.PHONY : CMakeFiles/eigenMatrix.dir/all
+useEigen/CMakeFiles/eigenMatrix.dir/all:
+	$(MAKE) -f useEigen/CMakeFiles/eigenMatrix.dir/build.make useEigen/CMakeFiles/eigenMatrix.dir/depend
+	$(MAKE) -f useEigen/CMakeFiles/eigenMatrix.dir/build.make useEigen/CMakeFiles/eigenMatrix.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fansa/Src/SLAM_Learning/ch3/build/CMakeFiles --progress-num=3,4 "Built target eigenMatrix"
+.PHONY : useEigen/CMakeFiles/eigenMatrix.dir/all
 
 # Include target in all.
-all: CMakeFiles/eigenMatrix.dir/all
+all: useEigen/CMakeFiles/eigenMatrix.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/eigenMatrix.dir/rule: cmake_check_build_system
+useEigen/CMakeFiles/eigenMatrix.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fansa/Src/SLAM_Learning/ch3/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/eigenMatrix.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 useEigen/CMakeFiles/eigenMatrix.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fansa/Src/SLAM_Learning/ch3/build/CMakeFiles 0
-.PHONY : CMakeFiles/eigenMatrix.dir/rule
+.PHONY : useEigen/CMakeFiles/eigenMatrix.dir/rule
 
 # Convenience name for target.
-eigenMatrix: CMakeFiles/eigenMatrix.dir/rule
+eigenMatrix: useEigen/CMakeFiles/eigenMatrix.dir/rule
 
 .PHONY : eigenMatrix
 
 # clean rule for target.
-CMakeFiles/eigenMatrix.dir/clean:
-	$(MAKE) -f CMakeFiles/eigenMatrix.dir/build.make CMakeFiles/eigenMatrix.dir/clean
-.PHONY : CMakeFiles/eigenMatrix.dir/clean
+useEigen/CMakeFiles/eigenMatrix.dir/clean:
+	$(MAKE) -f useEigen/CMakeFiles/eigenMatrix.dir/build.make useEigen/CMakeFiles/eigenMatrix.dir/clean
+.PHONY : useEigen/CMakeFiles/eigenMatrix.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/eigenMatrix.dir/clean
+clean: useEigen/CMakeFiles/eigenMatrix.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory useGeometry
+
+# Convenience name for "all" pass in the directory.
+useGeometry/all: useGeometry/CMakeFiles/useGeometry.dir/all
+
+.PHONY : useGeometry/all
+
+# Convenience name for "clean" pass in the directory.
+useGeometry/clean: useGeometry/CMakeFiles/useGeometry.dir/clean
+
+.PHONY : useGeometry/clean
+
+# Convenience name for "preinstall" pass in the directory.
+useGeometry/preinstall:
+
+.PHONY : useGeometry/preinstall
+
+#=============================================================================
+# Target rules for target useGeometry/CMakeFiles/useGeometry.dir
+
+# All Build rule for target.
+useGeometry/CMakeFiles/useGeometry.dir/all:
+	$(MAKE) -f useGeometry/CMakeFiles/useGeometry.dir/build.make useGeometry/CMakeFiles/useGeometry.dir/depend
+	$(MAKE) -f useGeometry/CMakeFiles/useGeometry.dir/build.make useGeometry/CMakeFiles/useGeometry.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fansa/Src/SLAM_Learning/ch3/build/CMakeFiles --progress-num=7,8 "Built target useGeometry"
+.PHONY : useGeometry/CMakeFiles/useGeometry.dir/all
+
+# Include target in all.
+all: useGeometry/CMakeFiles/useGeometry.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+useGeometry/CMakeFiles/useGeometry.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fansa/Src/SLAM_Learning/ch3/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 useGeometry/CMakeFiles/useGeometry.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fansa/Src/SLAM_Learning/ch3/build/CMakeFiles 0
+.PHONY : useGeometry/CMakeFiles/useGeometry.dir/rule
+
+# Convenience name for target.
+useGeometry: useGeometry/CMakeFiles/useGeometry.dir/rule
+
+.PHONY : useGeometry
+
+# clean rule for target.
+useGeometry/CMakeFiles/useGeometry.dir/clean:
+	$(MAKE) -f useGeometry/CMakeFiles/useGeometry.dir/build.make useGeometry/CMakeFiles/useGeometry.dir/clean
+.PHONY : useGeometry/CMakeFiles/useGeometry.dir/clean
+
+# clean rule for target.
+clean: useGeometry/CMakeFiles/useGeometry.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory visualizeGeometry
+
+# Convenience name for "all" pass in the directory.
+visualizeGeometry/all: visualizeGeometry/CMakeFiles/plotTrajectory.dir/all
+
+.PHONY : visualizeGeometry/all
+
+# Convenience name for "clean" pass in the directory.
+visualizeGeometry/clean: visualizeGeometry/CMakeFiles/plotTrajectory.dir/clean
+
+.PHONY : visualizeGeometry/clean
+
+# Convenience name for "preinstall" pass in the directory.
+visualizeGeometry/preinstall:
+
+.PHONY : visualizeGeometry/preinstall
+
+#=============================================================================
+# Target rules for target visualizeGeometry/CMakeFiles/plotTrajectory.dir
+
+# All Build rule for target.
+visualizeGeometry/CMakeFiles/plotTrajectory.dir/all:
+	$(MAKE) -f visualizeGeometry/CMakeFiles/plotTrajectory.dir/build.make visualizeGeometry/CMakeFiles/plotTrajectory.dir/depend
+	$(MAKE) -f visualizeGeometry/CMakeFiles/plotTrajectory.dir/build.make visualizeGeometry/CMakeFiles/plotTrajectory.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fansa/Src/SLAM_Learning/ch3/build/CMakeFiles --progress-num=5,6 "Built target plotTrajectory"
+.PHONY : visualizeGeometry/CMakeFiles/plotTrajectory.dir/all
+
+# Include target in all.
+all: visualizeGeometry/CMakeFiles/plotTrajectory.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+visualizeGeometry/CMakeFiles/plotTrajectory.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fansa/Src/SLAM_Learning/ch3/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 visualizeGeometry/CMakeFiles/plotTrajectory.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fansa/Src/SLAM_Learning/ch3/build/CMakeFiles 0
+.PHONY : visualizeGeometry/CMakeFiles/plotTrajectory.dir/rule
+
+# Convenience name for target.
+plotTrajectory: visualizeGeometry/CMakeFiles/plotTrajectory.dir/rule
+
+.PHONY : plotTrajectory
+
+# clean rule for target.
+visualizeGeometry/CMakeFiles/plotTrajectory.dir/clean:
+	$(MAKE) -f visualizeGeometry/CMakeFiles/plotTrajectory.dir/build.make visualizeGeometry/CMakeFiles/plotTrajectory.dir/clean
+.PHONY : visualizeGeometry/CMakeFiles/plotTrajectory.dir/clean
+
+# clean rule for target.
+clean: visualizeGeometry/CMakeFiles/plotTrajectory.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory example
+
+# Convenience name for "all" pass in the directory.
+example/all: example/CMakeFiles/coordinateTransform.dir/all
+
+.PHONY : example/all
+
+# Convenience name for "clean" pass in the directory.
+example/clean: example/CMakeFiles/coordinateTransform.dir/clean
+
+.PHONY : example/clean
+
+# Convenience name for "preinstall" pass in the directory.
+example/preinstall:
+
+.PHONY : example/preinstall
+
+#=============================================================================
+# Target rules for target example/CMakeFiles/coordinateTransform.dir
+
+# All Build rule for target.
+example/CMakeFiles/coordinateTransform.dir/all:
+	$(MAKE) -f example/CMakeFiles/coordinateTransform.dir/build.make example/CMakeFiles/coordinateTransform.dir/depend
+	$(MAKE) -f example/CMakeFiles/coordinateTransform.dir/build.make example/CMakeFiles/coordinateTransform.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fansa/Src/SLAM_Learning/ch3/build/CMakeFiles --progress-num=1,2 "Built target coordinateTransform"
+.PHONY : example/CMakeFiles/coordinateTransform.dir/all
+
+# Include target in all.
+all: example/CMakeFiles/coordinateTransform.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+example/CMakeFiles/coordinateTransform.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fansa/Src/SLAM_Learning/ch3/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/coordinateTransform.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fansa/Src/SLAM_Learning/ch3/build/CMakeFiles 0
+.PHONY : example/CMakeFiles/coordinateTransform.dir/rule
+
+# Convenience name for target.
+coordinateTransform: example/CMakeFiles/coordinateTransform.dir/rule
+
+.PHONY : coordinateTransform
+
+# clean rule for target.
+example/CMakeFiles/coordinateTransform.dir/clean:
+	$(MAKE) -f example/CMakeFiles/coordinateTransform.dir/build.make example/CMakeFiles/coordinateTransform.dir/clean
+.PHONY : example/CMakeFiles/coordinateTransform.dir/clean
+
+# clean rule for target.
+clean: example/CMakeFiles/coordinateTransform.dir/clean
 
 .PHONY : clean
 
