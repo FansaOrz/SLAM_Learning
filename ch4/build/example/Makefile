@@ -80,14 +80,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fansa/Src/SLAM_Learning/ch4/build/CMakeFiles /home/fansa/Src/SLAM_Learning/ch4/build/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/fansa/Src/SLAM_Learning/ch4/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/fansa/Src/SLAM_Learning/ch4/build/CMakeFiles /home/fansa/Src/SLAM_Learning/ch4/build/example/CMakeFiles/progress.marks
+	cd /home/fansa/Src/SLAM_Learning/ch4/build && $(MAKE) -f CMakeFiles/Makefile2 example/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fansa/Src/SLAM_Learning/ch4/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/fansa/Src/SLAM_Learning/ch4/build && $(MAKE) -f CMakeFiles/Makefile2 example/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,71 +97,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/fansa/Src/SLAM_Learning/ch4/build && $(MAKE) -f CMakeFiles/Makefile2 example/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/fansa/Src/SLAM_Learning/ch4/build && $(MAKE) -f CMakeFiles/Makefile2 example/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/fansa/Src/SLAM_Learning/ch4/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named useSophus
+# Convenience name for target.
+example/CMakeFiles/trajectoryError.dir/rule:
+	cd /home/fansa/Src/SLAM_Learning/ch4/build && $(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/trajectoryError.dir/rule
+.PHONY : example/CMakeFiles/trajectoryError.dir/rule
 
-# Build rule for target.
-useSophus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 useSophus
-.PHONY : useSophus
+# Convenience name for target.
+trajectoryError: example/CMakeFiles/trajectoryError.dir/rule
 
-# fast build rule for target.
-useSophus/fast:
-	$(MAKE) -f CMakeFiles/useSophus.dir/build.make CMakeFiles/useSophus.dir/build
-.PHONY : useSophus/fast
-
-#=============================================================================
-# Target rules for targets named trajectoryError
-
-# Build rule for target.
-trajectoryError: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 trajectoryError
 .PHONY : trajectoryError
 
 # fast build rule for target.
 trajectoryError/fast:
-	$(MAKE) -f example/CMakeFiles/trajectoryError.dir/build.make example/CMakeFiles/trajectoryError.dir/build
+	cd /home/fansa/Src/SLAM_Learning/ch4/build && $(MAKE) -f example/CMakeFiles/trajectoryError.dir/build.make example/CMakeFiles/trajectoryError.dir/build
 .PHONY : trajectoryError/fast
 
-useSophus.o: useSophus.cpp.o
+trajectoryError.o: trajectoryError.cpp.o
 
-.PHONY : useSophus.o
+.PHONY : trajectoryError.o
 
 # target to build an object file
-useSophus.cpp.o:
-	$(MAKE) -f CMakeFiles/useSophus.dir/build.make CMakeFiles/useSophus.dir/useSophus.cpp.o
-.PHONY : useSophus.cpp.o
+trajectoryError.cpp.o:
+	cd /home/fansa/Src/SLAM_Learning/ch4/build && $(MAKE) -f example/CMakeFiles/trajectoryError.dir/build.make example/CMakeFiles/trajectoryError.dir/trajectoryError.cpp.o
+.PHONY : trajectoryError.cpp.o
 
-useSophus.i: useSophus.cpp.i
+trajectoryError.i: trajectoryError.cpp.i
 
-.PHONY : useSophus.i
+.PHONY : trajectoryError.i
 
 # target to preprocess a source file
-useSophus.cpp.i:
-	$(MAKE) -f CMakeFiles/useSophus.dir/build.make CMakeFiles/useSophus.dir/useSophus.cpp.i
-.PHONY : useSophus.cpp.i
+trajectoryError.cpp.i:
+	cd /home/fansa/Src/SLAM_Learning/ch4/build && $(MAKE) -f example/CMakeFiles/trajectoryError.dir/build.make example/CMakeFiles/trajectoryError.dir/trajectoryError.cpp.i
+.PHONY : trajectoryError.cpp.i
 
-useSophus.s: useSophus.cpp.s
+trajectoryError.s: trajectoryError.cpp.s
 
-.PHONY : useSophus.s
+.PHONY : trajectoryError.s
 
 # target to generate assembly for a file
-useSophus.cpp.s:
-	$(MAKE) -f CMakeFiles/useSophus.dir/build.make CMakeFiles/useSophus.dir/useSophus.cpp.s
-.PHONY : useSophus.cpp.s
+trajectoryError.cpp.s:
+	cd /home/fansa/Src/SLAM_Learning/ch4/build && $(MAKE) -f example/CMakeFiles/trajectoryError.dir/build.make example/CMakeFiles/trajectoryError.dir/trajectoryError.cpp.s
+.PHONY : trajectoryError.cpp.s
 
 # Help Target
 help:
@@ -171,11 +160,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... useSophus"
 	@echo "... trajectoryError"
-	@echo "... useSophus.o"
-	@echo "... useSophus.i"
-	@echo "... useSophus.s"
+	@echo "... trajectoryError.o"
+	@echo "... trajectoryError.i"
+	@echo "... trajectoryError.s"
 .PHONY : help
 
 
@@ -187,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/fansa/Src/SLAM_Learning/ch4/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
