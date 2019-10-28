@@ -13,7 +13,7 @@ string estimated_file = "/home/fansa/Src/SLAM_Learning/ch4/example/estimated.txt
 
 typedef vector<Sophus::SE3d, Eigen::aligned_allocator<Sophus::SE3d>> TrajectoryType;
 
-void DrawTrajectory(const TrajectoryType &gt, const TrajectoryType &esti);
+void DrawTrajectory(const TrajectoryType &gt, const TrajectoryTy.pe &esti);
 
 TrajectoryType ReadTrajectory(const string &path);
 
